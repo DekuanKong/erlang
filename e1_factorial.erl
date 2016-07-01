@@ -12,6 +12,7 @@ final(M,N) ->
 get_xpres_spec_Msg_Num(Key,Stat_List) ->
 	case Num = proplists:get_value(Key, Stat_List) of
 		undefined ->
+		  io:format("###### hello git ~n",[]),
 			0;
     _ ->
       Num
